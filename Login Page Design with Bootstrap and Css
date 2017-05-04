@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+</head>
+<body class="login-bg container-fluid" runat="server">
+    <form id="form1" runat="server">
+
+        <div id="mainWrap" class="container-fluid" runat="server">
+
+            <div class="row" runat="server">
+                <div class="col-md-4 col-md-offset-4 " runat="server">
+
+                    <div class="login-container" runat="server">
+                        <img src="images/logo.jpg" alt="SalesEpic" class="logo" title="SalesEpic" />
+                        <div class="form-group" runat="server">
+                            <label for="">Username</label>
+                            <div class="icon-control" runat="server">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <asp:TextBox ID="txtUsername" placeholder="Enter Username" class="form-control" runat="server"></asp:TextBox>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Password</label>
+                            <div class="icon-control">
+                                <i class="fa fa-key" aria-hidden="true"></i>
+
+
+                                <asp:TextBox ID="txtPassword" TextMode="Password" placeholder="Enter Password" class="form-control" runat="server"></asp:TextBox>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group forget ">
+                            <button type="Submit" id="login" class="btn primary-btn" runat="server" >Login</button>
+                            <a href="#">Forget Password?....Click Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min"></script>
+    </form>
+</body>
+</html>
+
+Here is the Link to see the sample Login Page: http://localhost:56005/sales_portal/loginPage.aspx#
+

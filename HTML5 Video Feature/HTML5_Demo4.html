@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <video controls id="myVideoPlayer">
+        <source type="video/ogg" src="Wildlife.ogv" />
+        <source type="video/mp4" src="Wildlife.mp4" />
+    </video>
+    <br />
+    <button onclick="bnt_Click()">Pay/Pause</button>
+    <script type="text/javascript">
+        
+        function bnt_Click() {
+            var player = document.getElementById("myVideoPlayer");
+
+            if (player.paused) {
+                player.play();
+            }
+            else {
+                player.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
